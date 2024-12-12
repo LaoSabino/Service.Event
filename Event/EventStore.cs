@@ -5,7 +5,7 @@ namespace Service.Event.Event;
 
 public class EventStore : IEventStore
 {
-    private readonly List<CarEvent> _events = new();
+    private readonly List<CarEvent> _events = [];
     public Task AppendEventAsync(CarEvent @event)
     {
         _events.Add(@event);
